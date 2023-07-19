@@ -1,0 +1,421 @@
+body{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+/*Header*/
+header .div-logoenlace, header .div-buscador{
+    display: none;
+}
+/*Main*/
+
+/*Footer*/
+
+/*Header*/
+header{
+    background-color: white; 
+    text-align: center;   
+}
+
+header div{
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+}
+
+header nav h1{
+    text-align: center;
+}
+
+header nav{
+    display: inline-block;
+    width: 100%;
+}
+
+header nav ul{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;    
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;  
+}
+
+/*Main Index*/
+.main-index{
+    /* height: 445px; */    
+    width: 100%;
+}
+
+.main-index .mi-sectionuno {
+    height: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 15px;
+}
+
+.main-index .mi-sectionuno .imagen-main{
+    grid-column: span 1;
+    grid-row: span 2;
+    overflow: hidden; 
+    height: 100%;
+}
+
+.main-index .mi-sectionuno aside{
+    height: 100%;
+    margin-top: 7px;
+}
+
+.main-index .mi-sectionuno .imagen-main img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+main .divMain .itemdivMain{
+    text-align: center;
+    margin-top: 10px;
+}
+
+main .divMain h2{
+    text-align: center;
+}
+
+/*Main Carrito*/
+.main-carrito{
+    height: 83vh;
+}
+
+.main-carrito .div-carrito{
+    height: 100%;
+}
+
+.main-carrito .div-carrito h2{
+    text-align: center;
+}
+
+.main-carrito .div-carrito .carrito{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+.main-carrito .div-carrito .carrito .div-imgcarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.main-carrito .div-carrito .carrito .div-imgcarrito img{
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}
+
+.main-carrito .div-carrito .carrito .opciones-carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 38%;
+    margin-top: 1rem;
+}
+
+/*Main Hombres*/
+.main-hombresniños{
+    height: auto;
+    /* height: 170vh; */
+}
+
+.main-hombresniños .div-mainhn{
+    height: 95%;
+}
+
+.main-hombresniños .div-mainhn h2{
+    text-align: center;
+}
+
+.main-hombresniños .div-mainhn .div-mainh, .main-hombresniños .div-mainhn .div-mainn{
+    /* height: 50%; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* gap: 15px; */
+}
+
+.item-divmainh, .item-divmainn{
+    grid-row: span 1;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.item-divmainh img, .item-divmainn img{
+    height: 90%;
+    width: 80%;
+    object-fit: cover;
+}
+
+/*Main Mujeres*/
+
+
+
+
+main .divMain .itemdivMain h2{
+    text-align: center;
+}
+
+main .divMain .itemdivMain p{
+    text-align: justify;
+}
+
+/*Footer*/
+footer{
+    background-color: #242424;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 3px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;    
+}
+
+footer div { 
+        text-align: center;
+        padding: 15px;
+}
+
+@media screen and (min-width:1024px){
+/*Header*/
+header{
+    background-color: white; 
+    text-align: center;   
+    display: flex;
+}
+
+header .div-logoenlace, header .div-buscador{
+    display: block;
+}
+
+header .div-buscador{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+header div{
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+}
+
+header nav h1{
+    text-align: center;
+}
+
+header nav{
+    display: inline-block;
+    width: 40%;
+}
+
+header nav ul{
+    margin: 0;
+    list-style: none;
+    display: inline-block;    
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;  
+}
+
+/*Main*/
+main{
+    /* height: 476px; */
+    width: 100%;
+}
+
+/*Main Index*/
+.main-index{
+    /* height: 445px; */
+    height: 73vh;
+    width: 100%;
+}
+
+.main-index .mi-sectionuno {
+    height: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+}
+
+.main-index .mi-sectionuno .imagen-main{
+    grid-column: span 1;
+    grid-row: span 2;
+    overflow: hidden; 
+    height: 100%;
+}
+
+/*Main Carrito*/
+.main-carrito{
+    height: 73vh;
+}
+
+.main-carrito .div-carrito{
+    height: 100%;
+}
+
+.main-carrito .div-carrito h2{
+    text-align: center;
+}
+
+.main-carrito .div-carrito .carrito{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.main-carrito .div-carrito .carrito .div-imgcarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90%;
+}
+
+.main-carrito .div-carrito .carrito .div-imgcarrito img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.main-carrito .div-carrito .carrito .opciones-carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 90%;
+}
+
+/*Main Hombres*/
+.main-hombresniños{
+    height: auto;
+    height: 170vh;
+}
+
+.main-hombresniños .div-mainhn{
+    height: 95%;
+}
+
+.main-hombresniños .div-mainhn h2{
+    text-align: center;
+}
+
+.main-hombresniños .div-mainhn .div-mainh, .main-hombresniños .div-mainhn .div-mainn{
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* gap: 15px; */
+}
+
+.item-divmainh, .item-divmainn{
+    grid-row: span 2;
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+}
+
+.item-divmainh img, .item-divmainn img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+
+
+
+main .divMain .itemdivMain{
+    text-align: center;
+    margin-top: 10px;
+}
+
+main .divMain h2{
+    text-align: center;
+}
+
+main .div-carrito h2{
+    text-align: center;
+}
+
+main .div-carrito .carrito{
+    text-align: center;
+}
+
+main .divMain .itemdivMain h2{
+    text-align: center;
+}
+
+main .divMain .itemdivMain p{
+    text-align: justify;
+}
+
+/*Footer*/
+footer{
+    background-color: #242424;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 3px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;    
+}
+
+footer div { 
+        text-align: center;
+        padding: 15px;
+}
+
+}
