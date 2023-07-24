@@ -51,6 +51,10 @@ header nav ul li a{
     color: black;  
 }
 
+header nav ul li a:hover{
+    color: rgb(163, 161, 161);  
+}
+
 /*Main Index*/
 .main-index{
     /* height: 445px; */    
@@ -91,6 +95,15 @@ main .divMain .itemdivMain{
 
 main .divMain h2{
     text-align: center;
+}
+
+.main-index .mi-sectionuno article:hover{
+    cursor: pointer;
+    outline: 2px solid rgb(214, 212, 212);        
+}
+
+.main-index .mi-sectionuno article img:hover{
+    filter: blur(1px);
 }
 
 /*Main Carrito*/
@@ -209,6 +222,171 @@ footer div {
         padding: 15px;
 }
 
+@media screen and (min-width:600px) {
+    header{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    header .div-logoenlace, header .div-buscador{
+        display: none;
+    }   
+    
+    header nav{
+        display: inline-block;
+        width: 100%;
+    }
+
+    header nav h1{
+        text-align: center;
+    }
+    
+    header nav ul{
+        margin: 0;
+        list-style: none;
+        display: inline-block;    
+    }
+    
+    header nav ul li{
+        display: inline-block;
+        margin: 0 15px;
+    }
+    
+    header nav ul li a{
+        text-decoration: none;
+        color: black;  
+    }
+    
+    /*Main*/
+    main{
+        /* height: 476px; */
+        width: 100%;
+    }
+    
+    /*Main Index*/
+    .main-index{
+        /* height: 445px; */
+        height: 82vh;
+        width: 100%;
+    }
+    
+    .main-index .mi-sectionuno {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 8px;
+    }
+
+    .main-index .mi-sectionuno .imgindex-dos, .main-index .mi-sectionuno .imgindex-tres, .main-index .mi-sectionuno .imgindex-cuatro, .main-index .mi-sectionuno .imgindex-cinco{
+        grid-column: span 1;
+        grid-row: span 2;
+        overflow: hidden; 
+        height: 100%;
+        width: 100%;
+    }
+    
+    .main-index .mi-sectionuno .imgindex-uno{
+        grid-column: span 2;
+        grid-row: span 4;
+        overflow: hidden; 
+        height: 100%;
+    }
+
+    /*Main Carrito*/
+    .main-carrito{
+        height: 73vh;
+    }
+    
+    .main-carrito .div-carrito{
+        height: 100%;
+    }
+    
+    .main-carrito .div-carrito h2{
+        text-align: center;
+    }
+    
+    .main-carrito .div-carrito .carrito{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    
+    .main-carrito .div-carrito .carrito .div-imgcarrito{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 90%;
+    }
+    
+    .main-carrito .div-carrito .carrito .div-imgcarrito img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .main-carrito .div-carrito .carrito .opciones-carrito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 90%;
+    }
+    
+    /*Main Hombres*/
+    .main-hombresniños{
+        height: auto;
+        height: 190vh;
+    }
+    
+    .main-hombresniños .div-mainhn{
+        height: 95%;
+        margin: 5px;
+    }
+    
+    .main-hombresniños .div-mainhn h2{
+        text-align: center;
+    }
+    
+    .main-hombresniños .div-mainhn .div-mainh, .main-hombresniños .div-mainhn .div-mainn{
+        height: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10px;
+    }
+    
+    .item-divmainh, .item-divmainn{
+        grid-row: span 1;
+        grid-column: span 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-divmainh:hover, .item-divmainn:hover{
+        cursor: pointer;          
+    }
+    
+    .item-divmainh img, .item-divmainn img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .item-divmainh img:hover, .item-divmainn img:hover{
+        filter: blur(1px);
+        outline: 2px solid rgb(214, 212, 212); 
+    }
+
+    .item-divmainh:last-child, .item-divmainn:last-child{
+        display: none;
+    }
+    
+}
+
 @media screen and (min-width:1024px){
 /*Header*/
 header{
@@ -287,6 +465,10 @@ main{
     height: 100%;
 }
 
+.main-index .mi-sectionuno .imgindex-cuatro, .main-index .mi-sectionuno .imgindex-cinco{
+    display: none;
+}
+
 /*Main Carrito*/
 .main-carrito{
     height: 73vh;
@@ -332,7 +514,7 @@ main{
 /*Main Hombres*/
 .main-hombresniños{
     height: auto;
-    height: 170vh;
+    height: 180vh;
 }
 
 .main-hombresniños .div-mainhn{
@@ -347,21 +529,25 @@ main{
     height: 50%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     /* gap: 15px; */
 }
 
 .item-divmainh, .item-divmainn{
-    grid-row: span 2;
+    grid-row: span 1;
     grid-column: span 1;
     display: flex;
     justify-content: center;
 }
 
 .item-divmainh img, .item-divmainn img{
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+}
+
+.item-divmainh:last-child, .item-divmainn:last-child{
+    display: block;
 }
 
 
