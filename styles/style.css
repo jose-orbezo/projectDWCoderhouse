@@ -88,6 +88,7 @@ header nav ul li a:hover{
     object-fit: contain;
 }
 
+/*Main Footer*/
 main .divMain .itemdivMain{
     text-align: center;
     margin-top: 10px;
@@ -187,6 +188,24 @@ main .divMain h2{
 
 
 
+/*Main Footer*/
+main .divMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .divMain .itemdivMain{
+    text-align: center;
+    margin-top: 10px;    
+    width: 70%;    
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 main .divMain .itemdivMain h2{
     text-align: center;
@@ -215,6 +234,10 @@ footer ul li{
 footer ul li a{
     text-decoration: none;
     color: white;    
+}
+
+footer ul li a:hover{
+    color: rgb(163, 161, 161);  
 }
 
 footer div { 
